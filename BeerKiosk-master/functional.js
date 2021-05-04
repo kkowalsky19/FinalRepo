@@ -14,18 +14,38 @@ function buttonPress(){
         alert("Please enter a valid phone number!");
     }
     else{
+    document.getElementsByClassName("phone")[0].style.visibility = "hidden";
+    document.getElementsByClassName("phone")[1].style.visibility = "hidden";
     document.getElementById("paymentDiv").style.visibility = "visible";
     document.getElementById("inputDiv").style.visibility = "hidden";
     document.getElementById("totalCost").style.visibility = "visible";
+    document.getElementById("purchaseButton").style.visibility = "hidden";
     cost = document.getElementById("totalCost").innerHTML;
     document.getElementById("totalCost").innerHTML = "Total Costs: $" + Math.round(((cost * document.getElementById("amountOfSnacks").value) + ((cost * document.getElementById("amountOfSnacks").value)*.029) + .30) * 100) / 100 ;
     document.getElementById("flatDiv").innerHTML = "Flat Cost: $" + document.getElementById("amountOfSnacks").value * cost;
-    document.getElementById("taxDiv").innerHTML = "CC Fee: $" + ((((cost * document.getElementById("amountOfSnacks").value)*.029)) + .3);
-    document.getElementById("testDiv").style.visibility = "hidden";
-    document.getElementById("amountDiv").style.visibility = "hidden";
+
+    // Round to 2 decimal places
+    let ccFee = ((((cost * document.getElementById("amountOfSnacks").value)*.029)) + .3).toFixed(2);
+    document.getElementById("taxDiv").innerHTML = "CC Fee: $" + ccFee;
+    // document.getElementById("testDiv").style.visibility = "hidden";
+    // document.getElementById("amountDiv").style.visibility = "hidden";
+    document.getElementById("testDiv").style.display = "none"; // Removes the html element for better spacing
+    document.getElementById("amountDiv").style.display = "none";
+
+    // Redisplay removed elements
+    document.getElementById("taxDiv").style.display = "flex";
+    document.getElementById("flatDiv").style.display = "flex";
+    document.getElementById("totalCost").style.display = "flex";
+
+    // let mediaQuery = window.matchMedia('(min-width: 600px)');
+    // if (mediaQuery.matches) {
+    //   document.getElementById("paymentDiv").style.width = "300px";
+    //   document.getElementById("credit-info").style.width = "100%;";
+    // }
+
     }
-    
-    
+
+
  console.log("Pressed");
 }
 
@@ -33,13 +53,13 @@ function buttonPlus(){
     if(document.getElementById("amountOfSnacks").value < 4){
     document.getElementById("amountOfSnacks").value = parseInt(document.getElementById("amountOfSnacks").value) + 1;
     }
-    
+
 }
 function buttonMinus(){
     if(document.getElementById("amountOfSnacks").value > 1){
         document.getElementById("amountOfSnacks").value = parseInt(document.getElementById("amountOfSnacks").value) - 1;
     }
-    
+
 }
 function backButtonPress(){
     document.getElementById("paymentDiv").style.visibility = "hidden";
@@ -90,6 +110,7 @@ const formatToPhone = (event) => {
 };
 
 
+
 document.addEventListener("DOMContentLoaded", function(event) {
     const inputElement = document.getElementById('phone');
     inputElement.addEventListener('keydown',enforceFormat);
@@ -105,4 +126,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     textBoxListener = document.getElementById("amountOfSnacks").addEventListener("change",setSnack);
     window.addEventListener("popstate", backButtonPress);
     document.getElementById("purchaseButton").addEventListener("click",buttonPress);
+
+    document.getElementById("taxDiv").style.display = "none";
+    document.getElementById("flatDiv").style.display = "none";
+    document.getElementById("totalCost").style.display = "none";
 })
