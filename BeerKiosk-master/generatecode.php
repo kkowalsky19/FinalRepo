@@ -113,8 +113,8 @@ else if($used == -1){
     
 
     // Your Account SID and Auth Token from twilio.com/console
-    $account_sid = 'ACb33613893ad773affbeaa5d4e1ef3864';
-    $auth_token = 'dc72a7de924dd27ab323c76bd8a5ca68';
+    $account_sid = 'SENSORED';
+    $auth_token = 'SENSORED';
     // In production, these should be environment variables. E.g.:
     // $auth_token = $_ENV["TWILIO_ACCOUNT_SID"]
 
