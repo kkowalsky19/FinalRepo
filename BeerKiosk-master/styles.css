@@ -1,10 +1,55 @@
-.button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  }
+/* Used in  entercode.html*/
+
+* {
+    /*--color-border: darkgray;*/
+    /*--color-input: gray;*/
+    /*--color-fill-1: whitesmoke;*/
+    /*--color-fill-2: white;*/
+    --color-border: #7288ba;
+    --color-input: #557ca1;
+    --color-fill-1: #cde0e0;
+    --color-fill-2: #d6dfea;
+
+    --title-size: 43px;
+    --border-radius: 16px;
+}
+
+body {
+  -webkit-user-select:none;
+  -moz-user-select:-moz-none;
+  -ms-user-select:none;
+  user-select:none;
+
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.row > input[type=text] {
+  height: 45px;
+  width: 300px;
+  font-size: 43px;
+  text-align: center
+
+}
+
+.row-item {
+  margin: 10px;
+  font-size: 20px;
+}
+
+input[type=text] {
+  border: medium solid var(--color-border, darkgray);
+}
+
+button,input[type=submit] {
+  width: 100px;
+  height: 100px;
+  color: var(--color-input, grey);
+  background-color: var(--color-fill-2, white);
+  border: medium solid var(--color-border, darkgray);
+  border-radius: var(--border-radius, 16px);
+}
