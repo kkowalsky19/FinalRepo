@@ -1,0 +1,404 @@
+[06-Jun-2019 20:48:07 UTC] PHP Fatal error:  require_once(): Failed opening required 'stripe-php-6.37.0/init.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/beerkios/public_html/charge.php on line 2
+[06-Jun-2019 20:48:58 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\InvalidRequest' with message 'Amount must be at least 50 cents' in /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php:210 from API request 'req_0GbNgDXJKxLzTM'
+Stack trace:
+#0 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(173): Stripe\ApiRequestor::_specificAPIError('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array, Array)
+#1 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(473): Stripe\ApiRequestor->handleErrorResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array)
+#2 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(126): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray))
+#3 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiOperations/Request.php(57): Stripe\ApiRequestor->request('post', '/v1/checkout/se...', Array, Array)
+#4 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiOperations/Cr in /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php on line 210
+[06-Jun-2019 20:50:25 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\InvalidRequest' with message 'Missing required param: line_items[0][quantity].' in /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php:210 from API request 'req_L7czZq2pR5pMhR'
+Stack trace:
+#0 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(173): Stripe\ApiRequestor::_specificAPIError('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array, Array)
+#1 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(473): Stripe\ApiRequestor->handleErrorResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array)
+#2 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(126): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray))
+#3 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiOperations/Request.php(57): Stripe\ApiRequestor->request('post', '/v1/checkout/se...', Array, Array)
+#4 /home/beerkios/public_html/stripe-php-6.37.0/lib/ in /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php on line 210
+[06-Jun-2019 20:55:24 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\InvalidRequest' with message 'Missing required param: line_items[0][quantity].' in /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php:210 from API request 'req_nhIDlaLyVHrHLg'
+Stack trace:
+#0 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(173): Stripe\ApiRequestor::_specificAPIError('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array, Array)
+#1 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(473): Stripe\ApiRequestor->handleErrorResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array)
+#2 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(126): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray))
+#3 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiOperations/Request.php(57): Stripe\ApiRequestor->request('post', '/v1/checkout/se...', Array, Array)
+#4 /home/beerkios/public_html/stripe-php-6.37.0/lib/ in /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php on line 210
+[06-Jun-2019 20:57:07 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\InvalidRequest' with message 'Amount must be at least 50 cents' in /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php:210 from API request 'req_deBz2DYXosJwWH'
+Stack trace:
+#0 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(173): Stripe\ApiRequestor::_specificAPIError('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array, Array)
+#1 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(473): Stripe\ApiRequestor->handleErrorResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array)
+#2 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(126): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray))
+#3 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiOperations/Request.php(57): Stripe\ApiRequestor->request('post', '/v1/checkout/se...', Array, Array)
+#4 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiOperations/Cr in /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php on line 210
+[07-Jun-2019 14:15:11 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\InvalidRequest' with message 'Missing required param: line_items[0][quantity].' in /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php:210 from API request 'req_9SHg44nktoh7vY'
+Stack trace:
+#0 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(173): Stripe\ApiRequestor::_specificAPIError('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array, Array)
+#1 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(473): Stripe\ApiRequestor->handleErrorResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array)
+#2 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(126): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray))
+#3 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiOperations/Request.php(57): Stripe\ApiRequestor->request('post', '/v1/checkout/se...', Array, Array)
+#4 /home/beerkios/public_html/stripe-php-6.37.0/lib/ in /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php on line 210
+[10-Jun-2019 12:40:58 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\InvalidRequest' with message 'Missing required param: line_items[0][quantity].' in /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php:210 from API request 'req_D4kO7Wlgml4sAq'
+Stack trace:
+#0 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(173): Stripe\ApiRequestor::_specificAPIError('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array, Array)
+#1 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(473): Stripe\ApiRequestor->handleErrorResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array)
+#2 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(126): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray))
+#3 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiOperations/Request.php(57): Stripe\ApiRequestor->request('post', '/v1/checkout/se...', Array, Array)
+#4 /home/beerkios/public_html/stripe-php-6.37.0/lib/ in /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php on line 210
+[10-Jun-2019 12:41:14 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\InvalidRequest' with message 'Missing required param: line_items[0][quantity].' in /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php:210 from API request 'req_P3bzSzkcZ8F6Xn'
+Stack trace:
+#0 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(173): Stripe\ApiRequestor::_specificAPIError('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array, Array)
+#1 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(473): Stripe\ApiRequestor->handleErrorResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array)
+#2 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(126): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray))
+#3 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiOperations/Request.php(57): Stripe\ApiRequestor->request('post', '/v1/checkout/se...', Array, Array)
+#4 /home/beerkios/public_html/stripe-php-6.37.0/lib/ in /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php on line 210
+[10-Jun-2019 12:42:03 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\InvalidRequest' with message 'Missing required param: line_items[0][quantity].' in /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php:210 from API request 'req_SBvpbt5VA0rtcr'
+Stack trace:
+#0 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(173): Stripe\ApiRequestor::_specificAPIError('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array, Array)
+#1 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(473): Stripe\ApiRequestor->handleErrorResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array)
+#2 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(126): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray))
+#3 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiOperations/Request.php(57): Stripe\ApiRequestor->request('post', '/v1/checkout/se...', Array, Array)
+#4 /home/beerkios/public_html/stripe-php-6.37.0/lib/ in /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php on line 210
+[10-Jun-2019 14:31:22 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\InvalidRequest' with message 'Missing required param: line_items[0][quantity].' in /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php:210 from API request 'req_iQvDr5oOoau9Hx'
+Stack trace:
+#0 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(173): Stripe\ApiRequestor::_specificAPIError('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array, Array)
+#1 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(473): Stripe\ApiRequestor->handleErrorResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array)
+#2 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(126): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray))
+#3 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiOperations/Request.php(57): Stripe\ApiRequestor->request('post', '/v1/checkout/se...', Array, Array)
+#4 /home/beerkios/public_html/stripe-php-6.37.0/lib/ in /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php on line 210
+[10-Jun-2019 14:48:30 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\InvalidRequest' with message 'Missing required param: line_items[0][quantity].' in /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php:210 from API request 'req_RwC55rytNmRb7m'
+Stack trace:
+#0 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(173): Stripe\ApiRequestor::_specificAPIError('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array, Array)
+#1 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(473): Stripe\ApiRequestor->handleErrorResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array)
+#2 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(126): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray))
+#3 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiOperations/Request.php(57): Stripe\ApiRequestor->request('post', '/v1/checkout/se...', Array, Array)
+#4 /home/beerkios/public_html/stripe-php-6.37.0/lib/ in /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php on line 210
+[10-Jun-2019 14:55:48 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\InvalidRequest' with message 'Missing required param: line_items[0][quantity].' in /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php:210 from API request 'req_KxY51p9b0rfi6X'
+Stack trace:
+#0 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(173): Stripe\ApiRequestor::_specificAPIError('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array, Array)
+#1 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(473): Stripe\ApiRequestor->handleErrorResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array)
+#2 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(126): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray))
+#3 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiOperations/Request.php(57): Stripe\ApiRequestor->request('post', '/v1/checkout/se...', Array, Array)
+#4 /home/beerkios/public_html/stripe-php-6.37.0/lib/ in /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php on line 210
+[10-Jun-2019 14:56:01 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\InvalidRequest' with message 'Missing required param: line_items[0][quantity].' in /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php:210 from API request 'req_awdqWvpEsLyFJE'
+Stack trace:
+#0 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(173): Stripe\ApiRequestor::_specificAPIError('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array, Array)
+#1 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(473): Stripe\ApiRequestor->handleErrorResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array)
+#2 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(126): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray))
+#3 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiOperations/Request.php(57): Stripe\ApiRequestor->request('post', '/v1/checkout/se...', Array, Array)
+#4 /home/beerkios/public_html/stripe-php-6.37.0/lib/ in /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php on line 210
+[10-Jun-2019 14:56:03 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\InvalidRequest' with message 'Missing required param: line_items[0][quantity].' in /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php:210 from API request 'req_UAhLQvjC08LGuY'
+Stack trace:
+#0 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(173): Stripe\ApiRequestor::_specificAPIError('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array, Array)
+#1 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(473): Stripe\ApiRequestor->handleErrorResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array)
+#2 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(126): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray))
+#3 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiOperations/Request.php(57): Stripe\ApiRequestor->request('post', '/v1/checkout/se...', Array, Array)
+#4 /home/beerkios/public_html/stripe-php-6.37.0/lib/ in /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php on line 210
+[10-Jun-2019 14:56:04 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\InvalidRequest' with message 'Missing required param: line_items[0][quantity].' in /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php:210 from API request 'req_Uyy12gjn3iWKpF'
+Stack trace:
+#0 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(173): Stripe\ApiRequestor::_specificAPIError('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array, Array)
+#1 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(473): Stripe\ApiRequestor->handleErrorResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array)
+#2 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(126): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray))
+#3 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiOperations/Request.php(57): Stripe\ApiRequestor->request('post', '/v1/checkout/se...', Array, Array)
+#4 /home/beerkios/public_html/stripe-php-6.37.0/lib/ in /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php on line 210
+[10-Jun-2019 14:56:07 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\InvalidRequest' with message 'Missing required param: line_items[0][quantity].' in /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php:210 from API request 'req_ttqLis0H9j7vuV'
+Stack trace:
+#0 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(173): Stripe\ApiRequestor::_specificAPIError('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array, Array)
+#1 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(473): Stripe\ApiRequestor->handleErrorResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array)
+#2 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(126): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray))
+#3 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiOperations/Request.php(57): Stripe\ApiRequestor->request('post', '/v1/checkout/se...', Array, Array)
+#4 /home/beerkios/public_html/stripe-php-6.37.0/lib/ in /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php on line 210
+[10-Jun-2019 14:56:08 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\InvalidRequest' with message 'Missing required param: line_items[0][quantity].' in /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php:210 from API request 'req_mpTT4lgnUxsqkz'
+Stack trace:
+#0 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(173): Stripe\ApiRequestor::_specificAPIError('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array, Array)
+#1 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(473): Stripe\ApiRequestor->handleErrorResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array)
+#2 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(126): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray))
+#3 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiOperations/Request.php(57): Stripe\ApiRequestor->request('post', '/v1/checkout/se...', Array, Array)
+#4 /home/beerkios/public_html/stripe-php-6.37.0/lib/ in /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php on line 210
+[10-Jun-2019 14:56:09 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\InvalidRequest' with message 'Missing required param: line_items[0][quantity].' in /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php:210 from API request 'req_655EBKUK8xpwqV'
+Stack trace:
+#0 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(173): Stripe\ApiRequestor::_specificAPIError('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array, Array)
+#1 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(473): Stripe\ApiRequestor->handleErrorResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array)
+#2 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(126): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray))
+#3 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiOperations/Request.php(57): Stripe\ApiRequestor->request('post', '/v1/checkout/se...', Array, Array)
+#4 /home/beerkios/public_html/stripe-php-6.37.0/lib/ in /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php on line 210
+[10-Jun-2019 14:57:29 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\InvalidRequest' with message 'Missing required param: line_items[0][quantity].' in /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php:210 from API request 'req_vDrm9hPNRUDUKE'
+Stack trace:
+#0 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(173): Stripe\ApiRequestor::_specificAPIError('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array, Array)
+#1 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(473): Stripe\ApiRequestor->handleErrorResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array)
+#2 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(126): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray))
+#3 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiOperations/Request.php(57): Stripe\ApiRequestor->request('post', '/v1/checkout/se...', Array, Array)
+#4 /home/beerkios/public_html/stripe-php-6.37.0/lib/ in /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php on line 210
+[10-Jun-2019 15:02:35 UTC] PHP Fatal error:  Class 'Stripe\Stripe' not found in /home/beerkios/public_html/newcharge.php on line 2
+[11-Jun-2019 16:15:28 UTC] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/beerkios/public_html/charge.php on line 22
+[11-Jun-2019 16:17:22 UTC] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/beerkios/public_html/charge.php on line 22
+[11-Jun-2019 16:17:38 UTC] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/beerkios/public_html/charge.php on line 22
+[11-Jun-2019 16:18:34 UTC] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/beerkios/public_html/charge.php on line 22
+[11-Jun-2019 16:18:51 UTC] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/beerkios/public_html/charge.php on line 22
+[11-Jun-2019 16:20:03 UTC] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/beerkios/public_html/charge.php on line 21
+[11-Jun-2019 18:08:15 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\InvalidRequest' with message 'Invalid integer: 595.95' in /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php:210 from API request 'req_4dG1RTRjgRRdTi'
+Stack trace:
+#0 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(173): Stripe\ApiRequestor::_specificAPIError('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array, Array)
+#1 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(473): Stripe\ApiRequestor->handleErrorResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array)
+#2 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php(126): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray))
+#3 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiOperations/Request.php(57): Stripe\ApiRequestor->request('post', '/v1/checkout/se...', Array, Array)
+#4 /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiOperations/Create.php( in /home/beerkios/public_html/stripe-php-6.37.0/lib/ApiRequestor.php on line 210
+[12-Jun-2019 14:32:09 UTC] PHP Fatal error:  require_once(): Failed opening required 'vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/beerkios/public_html/charge.php on line 2
+[12-Jun-2019 14:36:40 UTC] PHP Fatal error:  Class 'Stripe\Stripe' not found in /home/beerkios/public_html/charge.php on line 2
+[12-Jun-2019 14:55:46 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\InvalidRequest' with message 'Received unknown parameters: line_items, success_url, cancel_url' in /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php:210 from API request 'req_Fyl5Z1inWVI1AI'
+Stack trace:
+#0 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(173): Stripe\ApiRequestor::_specificAPIError('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array, Array)
+#1 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(473): Stripe\ApiRequestor->handleErrorResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array)
+#2 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(126): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray))
+#3 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiOperations/Request.php(57): Stripe\ApiRequestor->request('post', '/v1/charges', Array, Array)
+#4 /home in /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php on line 210
+[12-Jun-2019 14:58:13 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\InvalidRequest' with message 'Received unknown parameters: name, images, quantity, success_url, cancel_url' in /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php:210 from API request 'req_dNXtGQf2w6qny0'
+Stack trace:
+#0 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(173): Stripe\ApiRequestor::_specificAPIError('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array, Array)
+#1 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(473): Stripe\ApiRequestor->handleErrorResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array)
+#2 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(126): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray))
+#3 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiOperations/Request.php(57): Stripe\ApiRequestor->request('post', '/v1/charges', Array, Arr in /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php on line 210
+[12-Jun-2019 15:03:31 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\InvalidRequest' with message 'You cannot use a Stripe token more than once: tok_1EkXz3Dxky8uNXEZLIOK1Ld8.' in /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php:210 from API request 'req_Vx4IUF3RZijlzJ'
+Stack trace:
+#0 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(173): Stripe\ApiRequestor::_specificAPIError('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array, Array)
+#1 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(473): Stripe\ApiRequestor->handleErrorResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array)
+#2 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(126): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray))
+#3 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiOperations/Request.php(57): Stripe\ApiRequestor->request('post', '/v1/charges', Array, Arra in /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php on line 210
+[12-Jun-2019 15:03:48 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\InvalidRequest' with message 'You cannot use a Stripe token more than once: tok_1EkXzKDxky8uNXEZGbSvB9O1.' in /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php:210 from API request 'req_PfEa1TemaOBwhJ'
+Stack trace:
+#0 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(173): Stripe\ApiRequestor::_specificAPIError('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array, Array)
+#1 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(473): Stripe\ApiRequestor->handleErrorResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array)
+#2 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(126): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray))
+#3 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiOperations/Request.php(57): Stripe\ApiRequestor->request('post', '/v1/charges', Array, Arra in /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php on line 210
+[12-Jun-2019 15:04:06 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\InvalidRequest' with message 'You cannot use a Stripe token more than once: tok_1EkXzcDxky8uNXEZkYizZvba.' in /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php:210 from API request 'req_hN17LMz6mRhsF9'
+Stack trace:
+#0 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(173): Stripe\ApiRequestor::_specificAPIError('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array, Array)
+#1 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(473): Stripe\ApiRequestor->handleErrorResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array)
+#2 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(126): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray))
+#3 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiOperations/Request.php(57): Stripe\ApiRequestor->request('post', '/v1/charges', Array, Arra in /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php on line 210
+[12-Jun-2019 15:20:47 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\Card' with message 'Your card was declined.' in /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php:214 from API request 'req_SpDnlW8k67v5Y9'
+Stack trace:
+#0 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(173): Stripe\ApiRequestor::_specificAPIError('{\n  "error": {\n...', 402, Object(Stripe\Util\CaseInsensitiveArray), Array, Array)
+#1 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(473): Stripe\ApiRequestor->handleErrorResponse('{\n  "error": {\n...', 402, Object(Stripe\Util\CaseInsensitiveArray), Array)
+#2 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(126): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 402, Object(Stripe\Util\CaseInsensitiveArray))
+#3 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiOperations/Request.php(57): Stripe\ApiRequestor->request('post', '/v1/charges', Array, Array)
+#4 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ in /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php on line 214
+[13-Jun-2019 13:28:30 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\InvalidRequest' with message 'Received unknown parameter: total_amount' in /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php:210 from API request 'req_cgmBzoYcr2ZQxz'
+Stack trace:
+#0 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(173): Stripe\ApiRequestor::_specificAPIError('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array, Array)
+#1 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(473): Stripe\ApiRequestor->handleErrorResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array)
+#2 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(126): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray))
+#3 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiOperations/Request.php(57): Stripe\ApiRequestor->request('post', '/v1/charges', Array, Array)
+#4 /home/beerkios/public_html/ve in /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php on line 210
+[13-Jun-2019 13:32:20 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\InvalidRequest' with message 'Received unknown parameter: name' in /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php:210 from API request 'req_dwfP7a9QTll5a4'
+Stack trace:
+#0 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(173): Stripe\ApiRequestor::_specificAPIError('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array, Array)
+#1 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(473): Stripe\ApiRequestor->handleErrorResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array)
+#2 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(126): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray))
+#3 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiOperations/Request.php(57): Stripe\ApiRequestor->request('post', '/v1/charges', Array, Array)
+#4 /home/beerkios/public_html/vendor/str in /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php on line 210
+[13-Jun-2019 13:34:26 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\InvalidRequest' with message 'No such account: 1' in /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php:210 from API request 'req_dZOPWNT3GMcTSw'
+Stack trace:
+#0 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(173): Stripe\ApiRequestor::_specificAPIError('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array, Array)
+#1 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(473): Stripe\ApiRequestor->handleErrorResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array)
+#2 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(126): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray))
+#3 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiOperations/Request.php(57): Stripe\ApiRequestor->request('post', '/v1/charges', Array, Array)
+#4 /home/beerkios/public_html/vendor/stripe/stripe-php in /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php on line 210
+[13-Jun-2019 15:26:15 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\InvalidRequest' with message 'No such account: 1' in /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php:210 from API request 'req_u0V6oU45lQJoZ0'
+Stack trace:
+#0 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(173): Stripe\ApiRequestor::_specificAPIError('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array, Array)
+#1 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(473): Stripe\ApiRequestor->handleErrorResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array)
+#2 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(126): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray))
+#3 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiOperations/Request.php(57): Stripe\ApiRequestor->request('post', '/v1/charges', Array, Array)
+#4 /home/beerkios/public_html/vendor/stripe/stripe-php in /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php on line 210
+[13-Jun-2019 18:14:51 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\InvalidRequest' with message 'Received unknown parameter: quantity' in /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php:210 from API request 'req_cdkv5fdXAZuqXC'
+Stack trace:
+#0 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(173): Stripe\ApiRequestor::_specificAPIError('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array, Array)
+#1 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(473): Stripe\ApiRequestor->handleErrorResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array)
+#2 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(126): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray))
+#3 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiOperations/Request.php(57): Stripe\ApiRequestor->request('post', '/v1/charges', Array, Array)
+#4 /home/beerkios/public_html/vendor in /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php on line 210
+[14-Jun-2019 07:33:53 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\Card' with message 'Your card has expired.' in /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php:214 from API request 'req_XhKWw3kWR0YNSA'
+Stack trace:
+#0 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(173): Stripe\ApiRequestor::_specificAPIError('{\n  "error": {\n...', 402, Object(Stripe\Util\CaseInsensitiveArray), Array, Array)
+#1 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(473): Stripe\ApiRequestor->handleErrorResponse('{\n  "error": {\n...', 402, Object(Stripe\Util\CaseInsensitiveArray), Array)
+#2 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(126): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 402, Object(Stripe\Util\CaseInsensitiveArray))
+#3 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiOperations/Request.php(57): Stripe\ApiRequestor->request('post', '/v1/charges', Array, Array)
+#4 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/A in /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php on line 214
+[17-Jun-2019 13:33:32 UTC] PHP Fatal error:  Function name must be a string in /home/beerkios/public_html/charge.php on line 56
+[17-Jun-2019 13:35:34 UTC] PHP Fatal error:  Function name must be a string in /home/beerkios/public_html/charge.php on line 56
+[17-Jun-2019 13:36:38 UTC] PHP Fatal error:  Function name must be a string in /home/beerkios/public_html/charge.php on line 56
+[17-Jun-2019 13:40:42 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\InvalidRequest' with message 'You cannot use a Stripe token more than once: tok_1EmL3wDxky8uNXEZFKCx3FPE.' in /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php:210 from API request 'req_tBPyrKnJczxvzk'
+Stack trace:
+#0 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(173): Stripe\ApiRequestor::_specificAPIError('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array, Array)
+#1 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(473): Stripe\ApiRequestor->handleErrorResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array)
+#2 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(126): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray))
+#3 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiOperations/Request.php(57): Stripe\ApiRequestor->request('post', '/v1/charges', Array, Arra in /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php on line 210
+[17-Jun-2019 17:11:32 UTC] PHP Fatal error:  Only variables can be passed by reference in /home/beerkios/public_html/charge.php on line 69
+[17-Jun-2019 17:12:15 UTC] PHP Fatal error:  Only variables can be passed by reference in /home/beerkios/public_html/charge.php on line 69
+[17-Jun-2019 17:17:35 UTC] PHP Fatal error:  Only variables can be passed by reference in /home/beerkios/public_html/charge.php on line 70
+[17-Jun-2019 17:51:32 UTC] PHP Fatal error:  Function name must be a string in /home/beerkios/public_html/generatecode.php on line 3
+[17-Jun-2019 17:52:18 UTC] PHP Fatal error:  Function name must be a string in /home/beerkios/public_html/generatecode.php on line 3
+[17-Jun-2019 17:52:20 UTC] PHP Fatal error:  Function name must be a string in /home/beerkios/public_html/generatecode.php on line 3
+[17-Jun-2019 17:52:29 UTC] PHP Fatal error:  Function name must be a string in /home/beerkios/public_html/generatecode.php on line 3
+[17-Jun-2019 17:52:39 UTC] PHP Fatal error:  Function name must be a string in /home/beerkios/public_html/generatecode.php on line 3
+[17-Jun-2019 17:54:08 UTC] PHP Fatal error:  Function name must be a string in /home/beerkios/public_html/generatecode.php on line 3
+[17-Jun-2019 17:54:10 UTC] PHP Fatal error:  Function name must be a string in /home/beerkios/public_html/generatecode.php on line 3
+[17-Jun-2019 17:54:29 UTC] PHP Fatal error:  Function name must be a string in /home/beerkios/public_html/generatecode.php on line 3
+[17-Jun-2019 17:54:36 UTC] PHP Fatal error:  Function name must be a string in /home/beerkios/public_html/generatecode.php on line 3
+[17-Jun-2019 17:55:47 UTC] PHP Fatal error:  Function name must be a string in /home/beerkios/public_html/generatecode.php on line 3
+[17-Jun-2019 17:55:48 UTC] PHP Fatal error:  Function name must be a string in /home/beerkios/public_html/generatecode.php on line 3
+[17-Jun-2019 17:55:49 UTC] PHP Fatal error:  Function name must be a string in /home/beerkios/public_html/generatecode.php on line 3
+[17-Jun-2019 17:55:49 UTC] PHP Fatal error:  Function name must be a string in /home/beerkios/public_html/generatecode.php on line 3
+[17-Jun-2019 17:55:49 UTC] PHP Fatal error:  Function name must be a string in /home/beerkios/public_html/generatecode.php on line 3
+[17-Jun-2019 17:55:50 UTC] PHP Fatal error:  Function name must be a string in /home/beerkios/public_html/generatecode.php on line 3
+[17-Jun-2019 20:09:45 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/beerkios/public_html/generatecode.php on line 78
+[17-Jun-2019 20:10:49 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/beerkios/public_html/generatecode.php on line 78
+[17-Jun-2019 20:12:07 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/beerkios/public_html/generatecode.php on line 78
+[17-Jun-2019 20:26:47 UTC] PHP Fatal error:  Cannot pass parameter 2 by reference in /home/beerkios/public_html/generatecode.php on line 114
+[17-Jun-2019 20:27:38 UTC] PHP Fatal error:  Cannot pass parameter 2 by reference in /home/beerkios/public_html/generatecode.php on line 114
+[19-Jun-2019 14:04:47 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\InvalidRequest' with message 'Received unknown parameter: receipt_number' in /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php:210 from API request 'req_8NX9aiqTrNJfbZ'
+Stack trace:
+#0 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(173): Stripe\ApiRequestor::_specificAPIError('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array, Array)
+#1 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(473): Stripe\ApiRequestor->handleErrorResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array)
+#2 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(126): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray))
+#3 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiOperations/Request.php(57): Stripe\ApiRequestor->request('post', '/v1/charges', Array, Array)
+#4 /home/beerkios/public_html/ in /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php on line 210
+[19-Jun-2019 14:23:22 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\InvalidRequest' with message 'Received unknown parameter: phone' in /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php:210 from API request 'req_74l56b8WU0Cjf4'
+Stack trace:
+#0 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(173): Stripe\ApiRequestor::_specificAPIError('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array, Array)
+#1 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(473): Stripe\ApiRequestor->handleErrorResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray), Array)
+#2 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(126): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 400, Object(Stripe\Util\CaseInsensitiveArray))
+#3 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiOperations/Request.php(57): Stripe\ApiRequestor->request('post', '/v1/charges', Array, Array)
+#4 /home/beerkios/public_html/vendor/st in /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php on line 210
+[19-Jun-2019 15:12:58 UTC] PHP Fatal error:  require_once(): Failed opening required 'Twilio/autoload.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/beerkios/public_html/generatecode.php on line 3
+[19-Jun-2019 15:13:56 UTC] PHP Fatal error:  require_once(): Failed opening required 'Twilio/autoload.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/beerkios/public_html/generatecode.php on line 3
+[19-Jun-2019 15:13:57 UTC] PHP Fatal error:  require_once(): Failed opening required 'Twilio/autoload.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/beerkios/public_html/generatecode.php on line 3
+[19-Jun-2019 15:14:02 UTC] PHP Fatal error:  require_once(): Failed opening required 'Twilio/autoload.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/beerkios/public_html/generatecode.php on line 3
+[19-Jun-2019 15:14:03 UTC] PHP Fatal error:  require_once(): Failed opening required 'Twilio/autoload.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/beerkios/public_html/generatecode.php on line 3
+[19-Jun-2019 15:14:20 UTC] PHP Fatal error:  require_once(): Failed opening required 'Twilio/autoload.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/beerkios/public_html/generatecode.php on line 3
+[19-Jun-2019 15:14:46 UTC] PHP Fatal error:  require_once(): Failed opening required 'Twilio/autoload.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/beerkios/public_html/generatecode.php on line 3
+[19-Jun-2019 15:15:36 UTC] PHP Fatal error:  require_once(): Failed opening required 'Twilio/autoload.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/beerkios/public_html/generatecode.php on line 4
+[19-Jun-2019 15:15:37 UTC] PHP Fatal error:  require_once(): Failed opening required 'Twilio/autoload.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/beerkios/public_html/generatecode.php on line 4
+[19-Jun-2019 15:16:19 UTC] PHP Fatal error:  require_once(): Failed opening required 'Twilio/autoload.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/beerkios/public_html/generatecode.php on line 4
+[19-Jun-2019 15:16:21 UTC] PHP Fatal error:  require_once(): Failed opening required 'Twilio/autoload.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/beerkios/public_html/generatecode.php on line 4
+[19-Jun-2019 15:16:21 UTC] PHP Fatal error:  require_once(): Failed opening required 'Twilio/autoload.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/beerkios/public_html/generatecode.php on line 4
+[19-Jun-2019 15:16:21 UTC] PHP Fatal error:  require_once(): Failed opening required 'Twilio/autoload.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/beerkios/public_html/generatecode.php on line 4
+[19-Jun-2019 15:16:22 UTC] PHP Fatal error:  require_once(): Failed opening required 'Twilio/autoload.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/beerkios/public_html/generatecode.php on line 4
+[19-Jun-2019 15:16:22 UTC] PHP Fatal error:  require_once(): Failed opening required 'Twilio/autoload.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/beerkios/public_html/generatecode.php on line 4
+[19-Jun-2019 15:17:35 UTC] PHP Fatal error:  require_once(): Failed opening required 'vendor/twilo/sdk/Twilio/autoload.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/beerkios/public_html/generatecode.php on line 4
+[19-Jun-2019 15:49:52 UTC] PHP Fatal error:  Uncaught exception 'Twilio\Exceptions\RestException' with message '[HTTP 400] Unable to create record: The number  is unverified. Trial accounts cannot send messages to unverified numbers; verify  at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers.' in /home/beerkios/public_html/vendor/twilio/sdk/Twilio/Version.php:85
+Stack trace:
+#0 /home/beerkios/public_html/vendor/twilio/sdk/Twilio/Version.php(219): Twilio\Version->exception(Object(Twilio\Http\Response), 'Unable to creat...')
+#1 /home/beerkios/public_html/vendor/twilio/sdk/Twilio/Rest/Api/V2010/Account/MessageList.php(69): Twilio\Version->create('POST', '/Accounts/ACb33...', Array, Array)
+#2 /home/beerkios/public_html/generatecode.php(132): Twilio\Rest\Api\V2010\Account\MessageList->create('15167574450', Array)
+#3 {main}
+  thrown in /home/beerkios/public_html/vendor/twilio/sdk/Twilio/Version.php on line 85
+[19-Jun-2019 18:19:52 UTC] PHP Fatal error:  Uncaught exception 'Twilio\Exceptions\RestException' with message '[HTTP 400] Unable to create record: The number  is unverified. Trial accounts cannot send messages to unverified numbers; verify  at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers.' in /home/beerkios/public_html/vendor/twilio/sdk/Twilio/Version.php:85
+Stack trace:
+#0 /home/beerkios/public_html/vendor/twilio/sdk/Twilio/Version.php(219): Twilio\Version->exception(Object(Twilio\Http\Response), 'Unable to creat...')
+#1 /home/beerkios/public_html/vendor/twilio/sdk/Twilio/Rest/Api/V2010/Account/MessageList.php(69): Twilio\Version->create('POST', '/Accounts/ACb33...', Array, Array)
+#2 /home/beerkios/public_html/generatecode.php(132): Twilio\Rest\Api\V2010\Account\MessageList->create('17405139741', Array)
+#3 {main}
+  thrown in /home/beerkios/public_html/vendor/twilio/sdk/Twilio/Version.php on line 85
+[19-Jun-2019 19:51:09 UTC] PHP Fatal error:  Call to a member function __toArray() on null in /home/beerkios/public_html/charge.php on line 56
+[19-Jun-2019 19:53:01 UTC] PHP Fatal error:  Call to a member function __toArray() on null in /home/beerkios/public_html/charge.php on line 59
+[19-Jun-2019 19:53:09 UTC] PHP Fatal error:  Call to a member function __toArray() on null in /home/beerkios/public_html/charge.php on line 59
+[19-Jun-2019 20:10:04 UTC] PHP Fatal error:  Call to a member function __toArray() on null in /home/beerkios/public_html/charge.php on line 59
+[19-Jun-2019 20:13:57 UTC] PHP Fatal error:  Call to a member function __toArray() on null in /home/beerkios/public_html/charge.php on line 59
+[19-Jun-2019 20:14:09 UTC] PHP Fatal error:  Call to a member function __toArray() on null in /home/beerkios/public_html/charge.php on line 59
+[21-Jun-2019 11:29:36 UTC] PHP Fatal error:  Uncaught exception 'Twilio\Exceptions\RestException' with message '[HTTP 400] Unable to create record: The 'To' number 100000000000 is not a valid phone number.' in /home/beerkios/public_html/vendor/twilio/sdk/Twilio/Version.php:85
+Stack trace:
+#0 /home/beerkios/public_html/vendor/twilio/sdk/Twilio/Version.php(219): Twilio\Version->exception(Object(Twilio\Http\Response), 'Unable to creat...')
+#1 /home/beerkios/public_html/vendor/twilio/sdk/Twilio/Rest/Api/V2010/Account/MessageList.php(69): Twilio\Version->create('POST', '/Accounts/ACb33...', Array, Array)
+#2 /home/beerkios/public_html/generatecode.php(132): Twilio\Rest\Api\V2010\Account\MessageList->create('100000000000', Array)
+#3 {main}
+  thrown in /home/beerkios/public_html/vendor/twilio/sdk/Twilio/Version.php on line 85
+[21-Jun-2019 15:05:07 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\Card' with message 'Your card was declined.' in /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php:214 from API request 'req_o6MM9AAeyd79a3'
+Stack trace:
+#0 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(173): Stripe\ApiRequestor::_specificAPIError('{\n  "error": {\n...', 402, Object(Stripe\Util\CaseInsensitiveArray), Array, Array)
+#1 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(473): Stripe\ApiRequestor->handleErrorResponse('{\n  "error": {\n...', 402, Object(Stripe\Util\CaseInsensitiveArray), Array)
+#2 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(126): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 402, Object(Stripe\Util\CaseInsensitiveArray))
+#3 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiOperations/Request.php(57): Stripe\ApiRequestor->request('post', '/v1/charges', Array, Array)
+#4 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ in /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php on line 214
+[21-Jun-2019 15:07:41 UTC] PHP Fatal error:  Uncaught exception 'Stripe\Error\Card' with message 'Your card was declined.' in /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php:214 from API request 'req_9kinkQvsexAScQ'
+Stack trace:
+#0 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(173): Stripe\ApiRequestor::_specificAPIError('{\n  "error": {\n...', 402, Object(Stripe\Util\CaseInsensitiveArray), Array, Array)
+#1 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(473): Stripe\ApiRequestor->handleErrorResponse('{\n  "error": {\n...', 402, Object(Stripe\Util\CaseInsensitiveArray), Array)
+#2 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php(126): Stripe\ApiRequestor->_interpretResponse('{\n  "error": {\n...', 402, Object(Stripe\Util\CaseInsensitiveArray))
+#3 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiOperations/Request.php(57): Stripe\ApiRequestor->request('post', '/v1/charges', Array, Array)
+#4 /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ in /home/beerkios/public_html/vendor/stripe/stripe-php/lib/ApiRequestor.php on line 214
+[21-Jun-2019 15:10:18 UTC] PHP Fatal error:  Call to a member function __toArray() on null in /home/beerkios/public_html/charge.php on line 80
+[21-Jun-2019 15:12:01 UTC] PHP Fatal error:  Call to a member function __toArray() on null in /home/beerkios/public_html/charge.php on line 86
+[21-Jun-2019 20:40:11 UTC] PHP Fatal error:  Uncaught exception 'Twilio\Exceptions\RestException' with message '[HTTP 400] Unable to create record: The 'To' number 1516282 is not a valid phone number.' in /home/beerkios/public_html/vendor/twilio/sdk/Twilio/Version.php:85
+Stack trace:
+#0 /home/beerkios/public_html/vendor/twilio/sdk/Twilio/Version.php(219): Twilio\Version->exception(Object(Twilio\Http\Response), 'Unable to creat...')
+#1 /home/beerkios/public_html/vendor/twilio/sdk/Twilio/Rest/Api/V2010/Account/MessageList.php(69): Twilio\Version->create('POST', '/Accounts/ACb33...', Array, Array)
+#2 /home/beerkios/public_html/generatecode.php(132): Twilio\Rest\Api\V2010\Account\MessageList->create('1(516) 282 -', Array)
+#3 {main}
+  thrown in /home/beerkios/public_html/vendor/twilio/sdk/Twilio/Version.php on line 85
+[21-Jun-2019 22:30:36 UTC] PHP Fatal error:  Uncaught exception 'Twilio\Exceptions\RestException' with message '[HTTP 400] Unable to create record: The number  is unverified. Trial accounts cannot send messages to unverified numbers; verify  at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers.' in /home/beerkios/public_html/vendor/twilio/sdk/Twilio/Version.php:85
+Stack trace:
+#0 /home/beerkios/public_html/vendor/twilio/sdk/Twilio/Version.php(219): Twilio\Version->exception(Object(Twilio\Http\Response), 'Unable to creat...')
+#1 /home/beerkios/public_html/vendor/twilio/sdk/Twilio/Rest/Api/V2010/Account/MessageList.php(69): Twilio\Version->create('POST', '/Accounts/ACb33...', Array, Array)
+#2 /home/beerkios/public_html/generatecode.php(132): Twilio\Rest\Api\V2010\Account\MessageList->create('15167574450', Array)
+#3 {main}
+  thrown in /home/beerkios/public_html/vendor/twilio/sdk/Twilio/Version.php on line 85
+[24-Jun-2019 20:24:33 UTC] PHP Fatal error:  Uncaught exception 'Twilio\Exceptions\RestException' with message '[HTTP 400] Unable to create record: The 'To' number 15555555555 is not a valid phone number.' in /home/beerkios/public_html/vendor/twilio/sdk/Twilio/Version.php:85
+Stack trace:
+#0 /home/beerkios/public_html/vendor/twilio/sdk/Twilio/Version.php(219): Twilio\Version->exception(Object(Twilio\Http\Response), 'Unable to creat...')
+#1 /home/beerkios/public_html/vendor/twilio/sdk/Twilio/Rest/Api/V2010/Account/MessageList.php(69): Twilio\Version->create('POST', '/Accounts/ACb33...', Array, Array)
+#2 /home/beerkios/public_html/generatecode.php(132): Twilio\Rest\Api\V2010\Account\MessageList->create('15555555555', Array)
+#3 {main}
+  thrown in /home/beerkios/public_html/vendor/twilio/sdk/Twilio/Version.php on line 85
+[24-Jun-2019 20:35:01 UTC] PHP Fatal error:  Uncaught exception 'Twilio\Exceptions\RestException' with message '[HTTP 400] Unable to create record: The number  is unverified. Trial accounts cannot send messages to unverified numbers; verify  at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers.' in /home/beerkios/public_html/vendor/twilio/sdk/Twilio/Version.php:85
+Stack trace:
+#0 /home/beerkios/public_html/vendor/twilio/sdk/Twilio/Version.php(219): Twilio\Version->exception(Object(Twilio\Http\Response), 'Unable to creat...')
+#1 /home/beerkios/public_html/vendor/twilio/sdk/Twilio/Rest/Api/V2010/Account/MessageList.php(69): Twilio\Version->create('POST', '/Accounts/ACb33...', Array, Array)
+#2 /home/beerkios/public_html/generatecode.php(132): Twilio\Rest\Api\V2010\Account\MessageList->create('19732938385', Array)
+#3 {main}
+  thrown in /home/beerkios/public_html/vendor/twilio/sdk/Twilio/Version.php on line 85
+[01-Nov-2019 16:08:10 UTC] PHP Warning:  set_error_handler() expects the argument (failed) to be a valid callback in /home/beerkios/public_html/charge.php on line 120
+[01-Nov-2019 19:02:47 UTC] PHP Warning:  set_error_handler() expects the argument (failed) to be a valid callback in /home/beerkios/public_html/charge.php on line 120
+[03-Nov-2019 02:52:14 UTC] PHP Warning:  set_error_handler() expects the argument (failed) to be a valid callback in /home/beerkios/public_html/charge.php on line 120
+[25-Nov-2019 07:08:35 UTC] PHP Warning:  include(header.html): failed to open stream: No such file or directory in /home/beerkios/public_html/admin.php on line 3
+[25-Nov-2019 07:08:35 UTC] PHP Warning:  include(header.html): failed to open stream: No such file or directory in /home/beerkios/public_html/admin.php on line 3
+[25-Nov-2019 07:08:35 UTC] PHP Warning:  include(): Failed opening 'header.html' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/beerkios/public_html/admin.php on line 3
+[25-Nov-2019 07:08:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/beerkios/public_html/admin.php:3) in /home/beerkios/public_html/admin.php on line 6
+[25-Nov-2019 07:26:46 UTC] PHP Warning:  include(header.html): failed to open stream: No such file or directory in /home/beerkios/public_html/admin.php on line 3
+[25-Nov-2019 07:26:46 UTC] PHP Warning:  include(header.html): failed to open stream: No such file or directory in /home/beerkios/public_html/admin.php on line 3
+[25-Nov-2019 07:26:46 UTC] PHP Warning:  include(): Failed opening 'header.html' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/beerkios/public_html/admin.php on line 3
+[25-Nov-2019 07:26:46 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/beerkios/public_html/admin.php:3) in /home/beerkios/public_html/admin.php on line 6
+[25-Nov-2019 07:38:36 UTC] PHP Warning:  include(header.html): failed to open stream: No such file or directory in /home/beerkios/public_html/admin.php on line 3
+[25-Nov-2019 07:38:36 UTC] PHP Warning:  include(header.html): failed to open stream: No such file or directory in /home/beerkios/public_html/admin.php on line 3
+[25-Nov-2019 07:38:36 UTC] PHP Warning:  include(): Failed opening 'header.html' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/beerkios/public_html/admin.php on line 3
+[25-Nov-2019 07:38:36 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/beerkios/public_html/admin.php:3) in /home/beerkios/public_html/admin.php on line 6
+[25-Nov-2019 07:48:35 UTC] PHP Warning:  include(header.html): failed to open stream: No such file or directory in /home/beerkios/public_html/admin.php on line 3
+[25-Nov-2019 07:48:35 UTC] PHP Warning:  include(header.html): failed to open stream: No such file or directory in /home/beerkios/public_html/admin.php on line 3
+[25-Nov-2019 07:48:35 UTC] PHP Warning:  include(): Failed opening 'header.html' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/beerkios/public_html/admin.php on line 3
+[25-Nov-2019 07:48:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/beerkios/public_html/admin.php:3) in /home/beerkios/public_html/admin.php on line 6
+[25-Dec-2019 22:19:10 UTC] PHP Warning:  set_error_handler() expects the argument (failed) to be a valid callback in /home/beerkios/public_html/charge.php on line 120
+[28-Jan-2020 02:43:04 UTC] PHP Warning:  set_error_handler() expects the argument (failed) to be a valid callback in /home/beerkios/public_html/charge.php on line 120
+[28-Jan-2020 02:54:17 UTC] PHP Warning:  include(header.html): failed to open stream: No such file or directory in /home/beerkios/public_html/admin.php on line 3
+[28-Jan-2020 02:54:17 UTC] PHP Warning:  include(header.html): failed to open stream: No such file or directory in /home/beerkios/public_html/admin.php on line 3
+[28-Jan-2020 02:54:17 UTC] PHP Warning:  include(): Failed opening 'header.html' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/beerkios/public_html/admin.php on line 3
+[28-Jan-2020 02:54:17 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/beerkios/public_html/admin.php:3) in /home/beerkios/public_html/admin.php on line 6
+[28-Jan-2020 02:54:39 UTC] PHP Warning:  include(header.html): failed to open stream: No such file or directory in /home/beerkios/public_html/admin.php on line 3
+[28-Jan-2020 02:54:39 UTC] PHP Warning:  include(header.html): failed to open stream: No such file or directory in /home/beerkios/public_html/admin.php on line 3
+[28-Jan-2020 02:54:39 UTC] PHP Warning:  include(): Failed opening 'header.html' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/beerkios/public_html/admin.php on line 3
+[28-Jan-2020 02:59:27 UTC] PHP Warning:  include(header.html): failed to open stream: No such file or directory in /home/beerkios/public_html/adminSubmit.php on line 3
+[28-Jan-2020 02:59:27 UTC] PHP Warning:  include(header.html): failed to open stream: No such file or directory in /home/beerkios/public_html/adminSubmit.php on line 3
+[28-Jan-2020 02:59:27 UTC] PHP Warning:  include(): Failed opening 'header.html' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/beerkios/public_html/adminSubmit.php on line 3
+[28-Jan-2020 02:59:27 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/beerkios/public_html/adminSubmit.php:3) in /home/beerkios/public_html/adminSubmit.php on line 44
+[28-Jan-2020 03:00:34 UTC] PHP Warning:  include(header.html): failed to open stream: No such file or directory in /home/beerkios/public_html/adminSubmit.php on line 3
+[28-Jan-2020 03:00:34 UTC] PHP Warning:  include(header.html): failed to open stream: No such file or directory in /home/beerkios/public_html/adminSubmit.php on line 3
+[28-Jan-2020 03:00:34 UTC] PHP Warning:  include(): Failed opening 'header.html' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/beerkios/public_html/adminSubmit.php on line 3
+[28-Jan-2020 03:00:34 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/beerkios/public_html/adminSubmit.php:3) in /home/beerkios/public_html/adminSubmit.php on line 44
+[01-Feb-2020 02:54:12 UTC] PHP Warning:  set_error_handler() expects the argument (failed) to be a valid callback in /home/beerkios/public_html/charge.php on line 120
+[01-Feb-2020 02:54:12 UTC] PHP Fatal error:  Uncaught Twilio\Exceptions\RestException: [HTTP 400] Unable to create record: The number  is unverified. Trial accounts cannot send messages to unverified numbers; verify  at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers. in /home/beerkios/public_html/vendor/twilio/sdk/Twilio/Version.php:85
+Stack trace:
+#0 /home/beerkios/public_html/vendor/twilio/sdk/Twilio/Version.php(219): Twilio\Version->exception(Object(Twilio\Http\Response), 'Unable to creat...')
+#1 /home/beerkios/public_html/vendor/twilio/sdk/Twilio/Rest/Api/V2010/Account/MessageList.php(68): Twilio\Version->create('POST', '/Accounts/ACb33...', Array, Array)
+#2 /home/beerkios/public_html/generatecode.php(130): Twilio\Rest\Api\V2010\Account\MessageList->create('12242424242', Object(Twilio\Values))
+#3 {main}
+  thrown in /home/beerkios/public_html/vendor/twilio/sdk/Twilio/Version.php on line 85
+[01-Feb-2020 02:54:18 UTC] PHP Warning:  set_error_handler() expects the argument (failed) to be a valid callback in /home/beerkios/public_html/charge.php on line 120
+[16-Feb-2020 03:16:08 UTC] PHP Warning:  set_error_handler() expects the argument (failed) to be a valid callback in /home/beerkios/public_html/charge.php on line 120
+[16-Feb-2020 03:52:42 UTC] PHP Warning:  set_error_handler() expects the argument (failed) to be a valid callback in /home/beerkios/public_html/charge.php on line 120
+[22-Feb-2020 16:45:14 UTC] PHP Warning:  set_error_handler() expects the argument (failed) to be a valid callback in /home/beerkios/public_html/charge.php on line 120
